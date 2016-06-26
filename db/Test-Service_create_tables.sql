@@ -7,7 +7,7 @@
 -- Table structure for table test.
 --
 CREATE TABLE test.test (
-  id int ,
+  id int NOT NULL AUTO_INCREMENT,
   number int ,
 CONSTRAINT id_PK PRIMARY KEY (id)
 );
