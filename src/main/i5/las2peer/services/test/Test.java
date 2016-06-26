@@ -35,7 +35,7 @@ import io.swagger.models.Swagger;
 import io.swagger.util.Json;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
- 
+import org.json.simple.JSONArray; 
 
 /**
  * 
