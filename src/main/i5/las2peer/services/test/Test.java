@@ -128,8 +128,6 @@ public class Test extends Service {
         HttpResponse testResult = new HttpResponse("Internal Error", HttpURLConnection.HTTP_INTERNAL_ERROR);
         return testResult;
       }
-      HttpResponse testResult = new HttpResponse(resultJson.toJSONString(), HttpURLConnection.HTTP_OK);
-      return testResult;
     }
     return null;
   }
