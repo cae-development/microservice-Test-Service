@@ -116,9 +116,9 @@ public class Test extends Service {
         statement = conn.prepareStatement("Select * from test");
         ResultSet result = statement.executeQuery();
         while (result.next()) {
-          array.add(result.getInt("number"));
+          array.add(result.getInt("id"));
         }
-        resultJson.put("numbers", array);
+        resultJson.put("ids", array);
         conn.close();
 
         HttpResponse testResult = new HttpResponse(resultJson.toJSONString(), HttpURLConnection.HTTP_OK);
