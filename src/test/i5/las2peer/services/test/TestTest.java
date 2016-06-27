@@ -112,7 +112,7 @@ public class TestTest {
 
       c.setLogin(Long.toString(testAgent.getId()), testPass);
       @SuppressWarnings("unchecked")
-      ClientResponse result = c.sendRequest("GET", mainPath + "/test/{param}", "",
+      ClientResponse result = c.sendRequest("GET", mainPath + "/test/", "",
         MediaType.TEXT_PLAIN, MediaType.APPLICATION_JSON, new Pair[] {});
       assertTrue(true); // change here
       System.out.println("Result of 'testtest': " + result.getResponse().trim());

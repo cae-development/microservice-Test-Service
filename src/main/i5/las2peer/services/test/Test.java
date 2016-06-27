@@ -94,7 +94,7 @@ public class Test extends Service {
    * 
    */
   @GET
-  @Path("/test/{param}")
+  @Path("/test/")
   @Produces(MediaType.APPLICATION_JSON)
   @Consumes(MediaType.TEXT_PLAIN)
   @ApiResponses(value = {
