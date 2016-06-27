@@ -96,7 +96,7 @@ public class Test extends Service {
     boolean testResult_condition = true;
     if(testResult_condition) {
       JSONObject resultJson = new JSONObject(); 
-        HttpResponse testResult = new HttpResponse(resultJson.toJSONString(), HttpURLConnection.HTTP_OK);
+      HttpResponse testResult = new HttpResponse(resultJson.toJSONString(), HttpURLConnection.HTTP_OK);
         return testResult;
     }
     return null;
