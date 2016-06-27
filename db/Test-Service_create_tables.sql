@@ -8,7 +8,7 @@
 --
 CREATE TABLE test.number (
   number int ,
-  id int ,
+  id int NOT NULL AUTO_INCREMENT ,
 CONSTRAINT id_PK PRIMARY KEY (id)
 );
 
