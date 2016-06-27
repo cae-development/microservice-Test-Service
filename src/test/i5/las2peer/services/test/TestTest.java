@@ -101,11 +101,11 @@ public class TestTest {
 
   /**
    * 
-   * Test for the test method.
+   * Test for the test/{param} method.
    * 
    */
   @Test
-  public void testtest() {
+  public void testtest/{param}() {
     MiniClient c = new MiniClient();
     c.setAddressPort(HTTP_ADDRESS, HTTP_PORT);
     try {
@@ -115,7 +115,7 @@ public class TestTest {
       ClientResponse result = c.sendRequest("GET", mainPath + "/test", "",
         MediaType.TEXT_PLAIN, MediaType.APPLICATION_JSON, new Pair[] {});
       assertTrue(true); // change here
-      System.out.println("Result of 'testtest': " + result.getResponse().trim());
+      System.out.println("Result of 'testtest/{param}': " + result.getResponse().trim());
     } catch (Exception e) {
       e.printStackTrace();
       fail("Exception: " + e);
