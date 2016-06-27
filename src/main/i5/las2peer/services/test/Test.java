@@ -98,11 +98,6 @@ public class Test extends Service {
       JSONObject resultJson = new JSONObject(); 
         HttpResponse testResult = new HttpResponse(resultJson.toJSONString(), HttpURLConnection.HTTP_OK);
         return testResult;
-      } catch (Exception e) {
-        e.printStackTrace();
-        HttpResponse testResult = new HttpResponse("Internal Error", HttpURLConnection.HTTP_INTERNAL_ERROR);
-        return testResult;
-      }
     }
     return null;
   }
