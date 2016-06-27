@@ -149,7 +149,7 @@ public class Test extends Service {
         while (result.next()) {
           array.add(result.getInt("number"));
         }
-        resultJson.put("numbers", array);
+        result.put("numbers", array);
         conn.close();
 
         HttpResponse testResult = new HttpResponse(result.toJSONString(), HttpURLConnection.HTTP_OK);
