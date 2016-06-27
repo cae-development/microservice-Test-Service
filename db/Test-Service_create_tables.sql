@@ -4,9 +4,9 @@
 -- --------------------------------------------------------
 
 --
--- Table structure for table number.
+-- Table structure for table numbers.
 --
-CREATE TABLE test.number (
+CREATE TABLE test.numbers (
   number int ,
   id int NOT NULL AUTO_INCREMENT ,
 CONSTRAINT id_PK PRIMARY KEY (id)
