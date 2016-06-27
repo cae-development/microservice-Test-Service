@@ -14,7 +14,7 @@ CONSTRAINT id_PK PRIMARY KEY (id)
 -- Table structure for table test.
 --
 CREATE TABLE test.test (
-  test int ,
-CONSTRAINT test_PK PRIMARY KEY (test)
+  id int ,
+CONSTRAINT id_PK PRIMARY KEY (id)
 );
 
