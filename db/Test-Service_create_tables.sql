@@ -8,6 +8,7 @@
 --
 CREATE TABLE test.number (
   number int ,
+  id int ,
 CONSTRAINT number_PK PRIMARY KEY (number)
 );
 
