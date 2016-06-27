@@ -145,9 +145,9 @@ public class Test extends Service {
         PreparedStatement statement = conn.prepareStatement("Insert into test (number) Values (1);");
         statement.executeUpdate();
         statement = conn.prepareStatement("Select * from test");
-        ResultSet result = statement.executeQuery();
-        while (result.next()) {
-          array.add(result.getInt("number"));
+        ResultSet resultSet = statement.executeQuery();
+        while (resultSet.next()) {
+          array.add(resultSet.getInt("number"));
         }
         result.put("numbers", array);
         conn.close();
