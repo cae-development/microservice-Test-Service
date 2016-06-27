@@ -15,6 +15,7 @@ CONSTRAINT id_PK PRIMARY KEY (id)
 --
 CREATE TABLE test.test (
   id int ,
+  number int ,
 CONSTRAINT id_PK PRIMARY KEY (id)
 );
 
