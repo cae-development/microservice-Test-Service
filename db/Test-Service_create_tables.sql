@@ -15,7 +15,7 @@ CONSTRAINT id_PK PRIMARY KEY (id)
 --
 CREATE TABLE test.test (
   id int NOT NULL AUTO_INCREMET ,
-  number2 int ,
+  number int ,
 CONSTRAINT id_PK PRIMARY KEY (id)
 );
 
