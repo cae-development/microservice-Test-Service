@@ -7,8 +7,7 @@
 -- Table structure for table number.
 --
 CREATE TABLE test.number (
-    ,
-  numbers int ,
-CONSTRAINT _PK PRIMARY KEY ()
+  number int ,
+CONSTRAINT number_PK PRIMARY KEY (number)
 );
 
