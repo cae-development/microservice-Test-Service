@@ -1,4 +1,4 @@
-package i5.las2peer.services.test2;
+package i5.las2peer.services.test;
 
 
 import java.net.HttpURLConnection;
@@ -20,7 +20,7 @@ import i5.las2peer.restMapper.MediaType;
 import i5.las2peer.restMapper.RESTMapper;
 import i5.las2peer.restMapper.annotations.ContentParam;
 import i5.las2peer.restMapper.annotations.Version;
-import i5.las2peer.services.test2.database.DatabaseManager;
+import i5.las2peer.services.test.database.DatabaseManager;
 import java.sql.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -57,7 +57,7 @@ import org.json.simple.JSONArray;
         contact = @Contact(name = "test", email = "CAEAddress@gmail.com") ,
         license = @License(name = "BSD",
             url = "https://github.com/cae-development/microservice-Test-Service/blob/master/LICENSE.txt") ) )
-public class Test2 extends Service {
+public class Test extends Service {
 
 
   /*
@@ -72,7 +72,7 @@ public class Test2 extends Service {
 
 
 
-  public Test2() {
+  public Test() {
     // read and set properties values
     setFieldValues();
     // instantiate a database manager to handle database connection pooling and credentials

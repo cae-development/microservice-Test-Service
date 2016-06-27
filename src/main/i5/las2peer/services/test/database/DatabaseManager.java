@@ -1,4 +1,4 @@
-package i5.las2peer.services.test2.database;
+package i5.las2peer.services.test.database;
 
 import java.sql.Connection;
 import java.sql.SQLException;
