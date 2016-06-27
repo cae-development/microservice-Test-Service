@@ -98,7 +98,8 @@ public class Test extends Service {
       JSONObject resultJson = new JSONObject(); 
       HttpResponse testResult = new HttpResponse(resultJson.toJSONString(), HttpURLConnection.HTTP_OK);
       return testResult;
-    }
+    } 
+    return null;
     
   }
 
