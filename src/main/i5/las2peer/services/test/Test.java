@@ -115,6 +115,35 @@ public class Test extends Service {
     
   }
 
+  /**
+   * 
+   * test2
+   * 
+   *
+   * 
+   * @return HttpResponse  
+   * 
+   */
+  @GET
+  @Path("/test2/")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.TEXT_PLAIN)
+  @ApiResponses(value = {
+       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "resultJson")
+  })
+  @ApiOperation(value = "test2", notes = " ")
+  public HttpResponse test2() {
+
+    // resultJson
+    boolean resultJson_condition = true;
+    if(resultJson_condition) {
+      JSONObject result = new JSONObject();
+      HttpResponse resultJson = new HttpResponse(result.toJSONString(), HttpURLConnection.HTTP_OK);
+      return resultJson;
+    }
+    return null;
+  }
+
 
 
 

@@ -122,6 +122,29 @@ public class TestTest {
     }
   }
 
+  /**
+   * 
+   * Test for the test2 method.
+   * 
+   */
+  @Test
+  public void testtest2() {
+    MiniClient c = new MiniClient();
+    c.setAddressPort(HTTP_ADDRESS, HTTP_PORT);
+    try {
+
+      c.setLogin(Long.toString(testAgent.getId()), testPass);
+      @SuppressWarnings("unchecked")
+      ClientResponse result = c.sendRequest("GET", mainPath + "/test2/", "",
+        MediaType.TEXT_PLAIN, MediaType.APPLICATION_JSON, new Pair[] {});
+      assertTrue(true); // change here
+      System.out.println("Result of 'testtest2': " + result.getResponse().trim());
+    } catch (Exception e) {
+      e.printStackTrace();
+      fail("Exception: " + e);
+    }
+  }
+
 
 
 
