@@ -101,21 +101,21 @@ public class TestTest {
 
   /**
    * 
-   * Test for the test/{param} method.
+   * Test for the test method.
    * 
    */
   @Test
-  public void testtest/{param}() {
+  public void testtest() {
     MiniClient c = new MiniClient();
     c.setAddressPort(HTTP_ADDRESS, HTTP_PORT);
     try {
       String param = "initialized";
       c.setLogin(Long.toString(testAgent.getId()), testPass);
       @SuppressWarnings("unchecked")
-      ClientResponse result = c.sendRequest("GET", mainPath + "/test", "",
+      ClientResponse result = c.sendRequest("GET", mainPath + "/test/{param}", "",
         MediaType.TEXT_PLAIN, MediaType.APPLICATION_JSON, new Pair[] {});
       assertTrue(true); // change here
-      System.out.println("Result of 'testtest/{param}': " + result.getResponse().trim());
+      System.out.println("Result of 'testtest': " + result.getResponse().trim());
     } catch (Exception e) {
       e.printStackTrace();
       fail("Exception: " + e);
