@@ -77,7 +77,7 @@ public class Test extends Service {
    * 
    * test
    * 
-   *
+   * @param param a String 
    * 
    * @return HttpResponse  
    * 
@@ -90,7 +90,7 @@ public class Test extends Service {
        @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "testResult")
   })
   @ApiOperation(value = "test", notes = " ")
-  public HttpResponse test() {
+  public HttpResponse test(@PathParam("param") String param) {
 
     // testResult
     boolean testResult_condition = true;
