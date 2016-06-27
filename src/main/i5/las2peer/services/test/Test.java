@@ -96,20 +96,6 @@ public class Test extends Service {
     boolean testResult_condition = true;
     if(testResult_condition) {
       JSONObject resultJson = new JSONObject(); 
-      JSONArray array = new JSONArray();
-      Connection conn = null;
-      try {
-        conn = dbm.getConnection();
-        PreparedStatement statement = conn.prepareStatement("Insert into test (number) Values (1);");
-        statement.executeUpdate();
-        statement = conn.prepareStatement("Select * from test");
-        ResultSet result = statement.executeQuery();
-        while (result.next()) {
-          array.add(result.getInt("id"));
-        }
-        resultJson.put("ids", array);
-        conn.close();
-
         HttpResponse testResult = new HttpResponse(resultJson.toJSONString(), HttpURLConnection.HTTP_OK);
         return testResult;
       } catch (Exception e) {
