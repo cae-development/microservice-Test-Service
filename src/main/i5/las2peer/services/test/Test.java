@@ -152,7 +152,7 @@ public class Test extends Service {
         resultJson.put("numbers", array);
         conn.close();
 
-        HttpResponse testResult = new HttpResponse(resultJson.toJSONString(), HttpURLConnection.HTTP_OK);
+        HttpResponse testResult = new HttpResponse(result.toJSONString(), HttpURLConnection.HTTP_OK);
         return testResult;
       } catch (Exception e) {
         e.printStackTrace();
