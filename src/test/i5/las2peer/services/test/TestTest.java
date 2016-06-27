@@ -109,7 +109,7 @@ public class TestTest {
     MiniClient c = new MiniClient();
     c.setAddressPort(HTTP_ADDRESS, HTTP_PORT);
     try {
-      String param = "initialized";
+
       c.setLogin(Long.toString(testAgent.getId()), testPass);
       @SuppressWarnings("unchecked")
       ClientResponse result = c.sendRequest("GET", mainPath + "/test/{param}", "",
